@@ -1,16 +1,16 @@
 
 
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Sudip Tamang";
-            $("#favicon").attr("href", "assets/images/favicon.png");
-        }
-        else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favicon.png");
-        }
-    });
+// document.addEventListener('visibilitychange',
+//     function () {
+//         if (document.visibilityState === "visible") {
+//             document.title = "Portfolio | Sudip Tamang";
+//             $("#favicon").attr("href", "assets/images/favicon.png");
+//         }
+//         else {
+//             document.title = "Come Back To Portfolio";
+//             $("#favicon").attr("href", "assets/images/favicon.png");
+//         }
+//     });
 
 
 // <!-- typed js effect starts -->
@@ -68,18 +68,24 @@ srtop.reveal('.home .content h3', { delay: 400 });
 srtop.reveal('.home .content p', { delay: 400 });
 srtop.reveal('.home .content .btn', { delay: 400 });
 
-srtop.reveal('.home .image', { delay: 400 });
 srtop.reveal('.home .linkedin', { interval: 600 });
-srtop.reveal('.home .github', { interval: 800 });
 srtop.reveal('.home .twitter', { interval: 1000 });
-srtop.reveal('.home .telegram', { interval: 600 });
 srtop.reveal('.home .instagram', { interval: 600 });
-srtop.reveal('.home .dev', { interval: 600 });
 
 /* SCROLL ABOUT */
-srtop.reveal('.about .content h3', { delay: 400 });
-srtop.reveal('.about .content .tag', { delay: 400 });
-srtop.reveal('.about .content p', { delay: 400 });
-srtop.reveal('.about .content .box-container', { delay: 400 });
-srtop.reveal('.about .content .resumebtn', { delay: 600 });
+srtop.reveal('.about .content h3', { delay: 200 });
+srtop.reveal('.about .content .tag', { delay: 200 });
+srtop.reveal('.about .content p', { delay: 200 });
+srtop.reveal('.about .content .box-container', { delay: 200 });
+srtop.reveal('.about .content .resumebtn', { delay: 400 });
+
+/*for skills and experience */
+srtop.reveal('.experience .experience-content-statement .tag',{delay:200})
+srtop.reveal('.experience .experience-content-statement p',{delay:200})
+// srtop.reveal('.experience-content-container .experience-content-image',{delay:100})
+
+
+
+
+
 
