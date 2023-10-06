@@ -82,7 +82,7 @@ srtop.reveal('.about .content .resumebtn', { delay: 400 });
 /*for skills and experience */
 srtop.reveal('.experience .experience-content-statement .tag',{delay:200})
 srtop.reveal('.experience .experience-content-statement p',{delay:200})
-// srtop.reveal('.experience-content-container .experience-content-image',{delay:100})
+// srtop.reveal('.experience-content-container',{delay:100})
 
 
 

@@ -374,56 +374,50 @@ header .navbar ul li a:hover {
   }
 }
 
-.experience .experience-content .experience-content-statement{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+/* Shared styles */
+.experience-content-statement, .experience-content-container {
+  text-align: center;
 }
 
-.experience .experience-content .experience-content-statement p{
+.experience-content-statement .tag,
+.experience-content-image p {
+  font-size: 1.4rem;
+  color: #020133;
+  font-weight: 800;
+}
+
+/* Experience content statement */
+.experience-content-statement {
+  display: flex;
+  flex-direction: column;
   font-size: 1.5rem;
   margin-top: 1.5rem;
   font-family: "Nunito";
   font-weight: 600;
-  text-transform: none;
-  text-align: center;
 }
 
-.experience-content-statement .tag{
-  font-size: 1.4rem;
-  color: #020133;
-  font-weight: 800;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.experience-content-container{
+/* Experience content container */
+.experience-content-container {
   width: 70%;
-  margin:auto;
+  margin: auto;
   margin-top: 10px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content:center;
+  justify-content: center;
 }
 
-.experience-content-image{
+/* Experience content image */
+.experience-content-image {
   width: 100px;
   height: 120px;
-  text-align: center;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.experience-content-image img{
+.experience-content-image img {
   object-fit: contain;
-}
-
-.experience-content-image p{
-  font-size: 1.4rem;
-  color: #020133;
-  font-weight: 800;
 }
 
