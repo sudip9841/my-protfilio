@@ -4,7 +4,7 @@
     "details": [
       {
         "appID": "8KFWPJ4CC8.com.staremit.remit",
-        "paths": [ "/*" ]
+        "paths": [ "/mobile-promo-code/*" ]
       }
     ]
   }
