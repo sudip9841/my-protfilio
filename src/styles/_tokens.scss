@@ -1,0 +1,58 @@
+// Tokens — colors, typography, motion
+:root {
+  // Dark
+  --bg: #07080c;
+  --bg-2: #0c0e15;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-2: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --fg: #f4f4f6;
+  --fg-2: #b9bcc7;
+  --fg-3: #7e8392;
+  --accent: #7c5cff;
+  --accent-2: #22d3ee;
+  --accent-3: #f472b6;
+  --glow: 124, 92, 255;
+  --code-bg: rgba(255, 255, 255, 0.03);
+
+  --font-display: "Instrument Serif", "Times New Roman", serif;
+  --font-sans: "Geist", "SF Pro Display", -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", monospace;
+
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-xl: 32px;
+
+  --ease: cubic-bezier(0.2, 0, 0.1, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="light"] {
+  --bg: #f7f6f2;
+  --bg-2: #efece4;
+  --surface: rgba(255, 255, 255, 0.6);
+  --surface-2: rgba(255, 255, 255, 0.85);
+  --border: rgba(20, 14, 38, 0.08);
+  --border-strong: rgba(20, 14, 38, 0.16);
+  --fg: #14122b;
+  --fg-2: #43425a;
+  --fg-3: #75748a;
+  --accent: #5b3df5;
+  --accent-2: #0891b2;
+  --accent-3: #db2777;
+  --glow: 91, 61, 245;
+  --code-bg: rgba(20, 14, 38, 0.04);
+}
+
+// SCSS-side breakpoint helpers
+$bp-sm: 720px;
+$bp-md: 880px;
+
+@mixin md {
+  @media (max-width: $bp-md) { @content; }
+}
+@mixin sm {
+  @media (max-width: $bp-sm) { @content; }
+}
