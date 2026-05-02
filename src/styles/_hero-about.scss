@@ -96,6 +96,13 @@
   text-transform: uppercase;
 }
 
+.hero-actions {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .hero-portrait {
   position: relative;
   height: 560px;

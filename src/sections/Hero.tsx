@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import portraitUrl from "../assets/portrait.png";
+import cvUrl from "../assets/sudip_tamang_CV.pdf";
 
 export function Hero() {
   const [time, setTime] = useState("");
@@ -52,6 +53,23 @@ export function Hero() {
             <span>Frontend-leaning</span>
             <span aria-hidden="true">·</span>
             <span>Currently @ Maitri Holdings</span>
+          </div>
+
+          <div className="hero-actions">
+            <a
+              href={cvUrl}
+              download="sudip_tamang_CV.pdf"
+              className="btn btn-primary"
+              data-cursor="hover"
+            >
+              Download CV
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                <path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+            <a href="#contact" className="btn" data-cursor="hover">
+              Get in touch
+            </a>
           </div>
         </div>
 
