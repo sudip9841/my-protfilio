@@ -95,6 +95,24 @@
   &.is-down { width: 24px; height: 24px; }
 }
 
+// `difference` blending renders the cursor near-white over the light
+// background, so use a solid dark fill with normal blending in light mode.
+[data-theme="light"] {
+  .cursor-dot {
+    background: var(--fg);
+    mix-blend-mode: normal;
+  }
+  .cursor-ring {
+    border-color: var(--fg);
+    mix-blend-mode: normal;
+
+    &.is-text {
+      background: var(--fg);
+      mix-blend-mode: normal;
+    }
+  }
+}
+
 @media (hover: none), (pointer: coarse) {
   .cursor-dot, .cursor-ring { display: none; }
 }

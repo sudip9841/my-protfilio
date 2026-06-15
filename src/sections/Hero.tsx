@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import portraitUrl from "../assets/portrait.png";
 import cvUrl from "../assets/sudip_tamang_CV.pdf";
+import { CvViewer } from "../components/CvViewer";
+
+const CV_FILE_NAME = "sudip_tamang_CV.pdf";
 
 export function Hero() {
   const [time, setTime] = useState("");
+  const [cvOpen, setCvOpen] = useState(false);
   useEffect(() => {
     const update = () => {
       const opts: Intl.DateTimeFormatOptions = {
@@ -56,17 +60,18 @@ export function Hero() {
           </div>
 
           <div className="hero-actions">
-            <a
-              href={cvUrl}
-              download="sudip_tamang_CV.pdf"
+            <button
+              type="button"
+              onClick={() => setCvOpen(true)}
               className="btn btn-primary"
               data-cursor="hover"
             >
-              Download CV
+              View CV
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                <path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="12" cy="12" r="3" />
               </svg>
-            </a>
+            </button>
             <a href="#contact" className="btn" data-cursor="hover">
               Get in touch
             </a>
@@ -107,6 +112,10 @@ export function Hero() {
           </div>
         </div>
       </div>
+
+      {cvOpen && (
+        <CvViewer src={cvUrl} fileName={CV_FILE_NAME} onClose={() => setCvOpen(false)} />
+      )}
     </section>
   );
 }
